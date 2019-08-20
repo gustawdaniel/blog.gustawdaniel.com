@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev",
-    "prod": "vuepress build"
+    "prod": "vuepress build",
+    "forestry:preview": "npm run dev"
   },
   "author": "",
   "license": "ISC",
