@@ -32,7 +32,7 @@ We want to prepare a file with dates like these
 Allow us to assume that you need to show dates of creation of files in your folder with photos. You can do it using the command
 
 ```bash
-ls -l --time-style=long-iso images | awk '{print $6}' | sort > local/dates.csv
+ls -l --time-style=long-iso . | awk '{print $6}' | sort > /tmp/dates.csv
 ```
 
 Option `--time-style` allows showing dates in easy to the processing format. Next `awk` selects column with dates and sorted dates are saved in temporary file  `/tmp/dates.csv` .
@@ -61,4 +61,4 @@ Finally, you need also `jq`
 
 > [https://stedolan.github.io/jq/download/](https://stedolan.github.io/jq/download/)
 
-I hope this article inspired you. For me, it is a great example of how a small amount of code is needed to achieve great-looking results in data visualization today. Wow! 
+I hope you like this article. For me, it is a great example of how a small amount of code is needed to achieve great-looking results in data visualization today. Wow! 

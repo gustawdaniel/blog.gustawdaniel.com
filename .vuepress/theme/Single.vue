@@ -13,8 +13,3 @@
     export default {};
 </script>
 
-<style>
-    p {
-        margin-block-start: 1em;
-    }
-</style>

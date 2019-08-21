@@ -1,0 +1,10 @@
+p {
+  margin-block-start: 1em;
+}
+
+
+.theme-default-content:not(.custom) {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+}

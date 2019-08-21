@@ -8,7 +8,7 @@
             </div>
         </header>
         <section class="section">
-            <div class="container">
+            <div class="theme-default-content">
                 <Index v-if="isIndex"/>
                 <Single v-if="!isIndex"/>
             </div>
@@ -20,7 +20,6 @@
     import Single from './Single';
 
     // import 'bulma/css/bulma.css'
-
 
     export default {
         components: {
@@ -37,8 +36,9 @@
 
 <style lang="scss">
     @import "style/bluma";
-
-    * {
-        font-family: 'Lato', sans-serif !important;
-    }
+    @import "style/lato";
+    @import "style/custom";
+    @import "style/prism-darcula";
 </style>
+
+<!--<style src="prismjs/themes/prism-tomorrow.css"></style>-->
