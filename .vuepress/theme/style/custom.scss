@@ -9,6 +9,16 @@ p {
   padding: 2rem 2.5rem;
 }
 
+.full-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.layout-main {
+  flex: 1;
+}
+
 // block
 
 // NOT USED
@@ -17,7 +27,7 @@ p {
 //  background: #02161b;
 //  color: #73e1e4;
 //  font-weight: 400!important;
-//  min-height: 100vh;
+//
 //
 //  h1,h2,h3,h4,h5,h6 {
 //    color: #80e3f3 !important;

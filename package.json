@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
-    "prod": "vuepress build",
+    "prod": "vuepress build && sed -i \"s/<html lang=\\\"en-US\\\">/<html lang=\\\"en-US\\\" data-version=$(jq '.version' package.json)>/g\" .vuepress/dist/index.html",
     "cy:run": "cypress run",
+    "cy:open": "cypress oepn",
     "test": "start-server-and-test dev http://localhost:8080 cy:run",
     "forestry:preview": "npm run dev"
   },
