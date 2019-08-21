@@ -3,3 +3,4 @@ node_modules
 dist
 .vuepress/dist/
 local
+cypress/videos

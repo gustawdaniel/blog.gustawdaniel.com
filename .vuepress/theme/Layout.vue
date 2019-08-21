@@ -2,8 +2,8 @@
     <div>
         <header class="hero has-background-info">
             <div class="hero-body">
-                <div class="container">
-                    <h1 class="title has-text-white">{{ $site.title }}</h1>
+                <div class="container has-text-white">
+                    <h1 class="title has-text-white has-text-centered">{{ $site.title }}</h1>
                 </div>
             </div>
         </header>
@@ -19,18 +19,16 @@
     import Index from './Index';
     import Single from './Single';
 
-    // import 'bulma/css/bulma.css'
-
     export default {
         components: {
             Index,
-            Single
+            Single,
         },
         computed: {
             isIndex() {
                 return this.$page.path.endsWith("/");
             }
-        }
+        },
     };
 </script>
 
@@ -40,5 +38,3 @@
     @import "style/custom";
     @import "style/prism-darcula";
 </style>
-
-<!--<style src="prismjs/themes/prism-tomorrow.css"></style>-->
