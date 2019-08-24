@@ -1,5 +1,5 @@
 ---
-title: Logowanie danych w MySql, Ajax i Behat
+title: Logowanie danych w MySql, Ajax i Behat :)
 tags:
 - ajax
 - mysql
